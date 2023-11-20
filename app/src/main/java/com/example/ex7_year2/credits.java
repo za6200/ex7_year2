@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class credits extends AppCompatActivity {
@@ -22,5 +23,9 @@ public class credits extends AppCompatActivity {
         credit1 = findViewById(R.id.credit1);
         credit1.setText("thanks for my parents for getting me to where i am and always help me to follow my dreams :)");
         backActivity = new Intent(this, MainActivity.class);
+    }
+
+    public void back(View view) {
+        startActivity(backActivity);
     }
 }
