@@ -2,6 +2,7 @@ package com.example.ex7_year2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -13,11 +14,13 @@ public class credits extends AppCompatActivity {
      * class will credit my parents
      */
     TextView credit1;
+    Intent backActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credits);
         credit1 = findViewById(R.id.credit1);
         credit1.setText("thanks for my parents for getting me to where i am and always help me to follow my dreams :)");
+        backActivity = new Intent(this, MainActivity.class);
     }
 }
